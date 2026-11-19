@@ -1,0 +1,16 @@
+# Nandi backend. Python 3.9+ (developed on 3.9 and 3.12).
+fastapi>=0.110
+uvicorn>=0.29
+httpx>=0.27
+pydantic>=2.6
+python-multipart>=0.0.9      # image uploads
+# Draw Things gRPC
+grpcio>=1.62
+protobuf>=4.25
+flatbuffers>=24.3            # builds the GenerationConfiguration the server expects
+fpzip>=1.2                   # decodes the compressed tensors Draw Things returns
+numpy>=1.24
+pillow>=10.0
+cryptography>=42             # reads the self-signed server certificate's name (TLS)
+# only needed to regenerate backend/app/pb/imageService_pb2*.py from the .proto
+grpcio-tools>=1.62

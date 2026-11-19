@@ -1,0 +1,57 @@
+# ───────── Local data: SQLite DB (settings incl. API keys/secrets), uploads, chunks, renders ─────────
+backend/data/
+*.db
+*.db-shm
+*.db-wal
+
+# ───────── Secrets ─────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ───────── Python ─────────
+backend/.venv/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ───────── Node / Vite ─────────
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# ───────── Generated media ─────────
+*.mp4
+*.mov
+*.webm
+*.wav
+*.mp3
+*.gif
+# keep the logo / UI images
+!frontend/public/*.png
+!frontend/public/*.svg
+!frontend/src/assets/*
+
+# ───────── Logs & temp ─────────
+*.log
+npm-debug.log*
+*.tmp
+*.swp
+
+# ───────── Tooling & OS ─────────
+.codegraph/
+.opencode/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
